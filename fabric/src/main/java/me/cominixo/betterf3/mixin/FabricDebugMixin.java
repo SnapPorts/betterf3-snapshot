@@ -37,6 +37,7 @@ public abstract class FabricDebugMixin {
      * @param graphics    Draw Context
      * @param lines       List of strings
      * @param alignLeft   If {@code true}, renders on the left side; if {@code false}, renders on the right side.
+     * @param width       Screen width
      * @param ci          Callback info
      */
     @Inject(method = "extractLines", at = @At("HEAD"), cancellable = true)
@@ -44,6 +45,7 @@ public abstract class FabricDebugMixin {
             final GuiGraphicsExtractor graphics,
             final List<String> lines,
             final boolean alignLeft,
+            final int width,
             final CallbackInfo ci) {
 
         if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isOverlayVisible()) {

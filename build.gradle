@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 
 plugins {
     id "architectury-plugin" version "3.5-SNAPSHOT"
-    id "dev.architectury.loom-no-remap" version "1.14-SNAPSHOT" apply false
+    id "dev.architectury.loom-no-remap" version "1.17-SNAPSHOT" apply false
     id "com.diffplug.spotless" version "7.2.1" apply false
     id "net.kyori.indra" version "3.2.0"
     id "net.kyori.indra.git" version "3.2.0"
